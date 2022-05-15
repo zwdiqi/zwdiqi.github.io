@@ -1,212 +1,968 @@
+锘�<!doctype html>
+<html class="no-js" lang="en">
 
-<!DOCTYPE html>
-<head>
-<meta charset="gb2312">
-<title>导航页</title>
-<base target="_blank">
-<style>
-body{padding:0;margin:0;background:#F5F4F2;font-size:14px;color:#992222;font-family:"微软雅黑",sans-serif;}
-ul,dl,dt,dd,p{list-style-type:none;padding:0;margin:0;}
-a{text-decoration:none;}
-.fl{float:left;}
-.fr{float:right;}
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-.head{width:960px;height:65px;margin:0 auto;}
-.logo{width:130px;height:35px;margin-top:15px;}
-.logo .logoimg{display:inline-block;width:160px;height:35px;background: url(images/logo.png) no-repeat;text-indent:-999px;}
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Home</title>
 
-.title{width:80px;height:35px;margin-top:20px;color:#909090;font-size:20px;}
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png">
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-.search{width:352px;height:35px;margin:15px 0 0 100px;}
-.search .text{width:268px;height:33px;padding:0 10px;border:1px solid #EBE9E7;background:#FFFFFF;line-height:33px;font-size:15px;color:#999999;}
-.search .button{border:0;width:62px;height:35px;background:#B24422;line-height:35px;font-size:15px;color:#FFF;text-align:center;}
-.search .button:hover{background:#992222;}
+		<!--flat icon css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
 
-.favorite{width:90px;height:50px;background:#E8E6E3;text-align:center;}
-.favorite a{color:#992222;font-size:14px;display:inline-block;margin-top:12px;}
-.favorite a:hover{background:#992222;color:#FFF;}
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
 
-.content{width:920px;margin:20px auto;background:#FFF;padding:1px 20px;}
-.content h2{line-height:25px;color:#909090;font-size:18px;font-weight:normal;}
-.content ul{width:920px;margin:0 auto;border-left:1px solid #DDD;border-top:1px solid #DDD;margin-bottom:20px;overflow:hidden;}
-.content ul li{float:left;width:183px;height:35px;border-right:1px solid #DDD;border-bottom:1px solid #DDD;}
-.content ul li a{margin:7px 0 0 20px;display:inline-block;color:#992222;}
-.content ul li a:hover{background:#992222;color:#FFF;}
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-.footer{width:960px;height:60px;margin:0 auto;}
-.footer .fleft{width:500px;height:60px;}
-.footer .fleft p{line-height:25px;color:#909090;font-size:12px;}
-.footer .fleft .p1 a{color:#992222;margin-right:10px;}
-.footer .fleft .p2 a{color:#909090;}
-.footer .fright{width:450px;height:60px;}
-.footer .fright p{line-height:50px;color:#909090;text-align:center;}
-</style>
-</head>
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
-<body>
-<div class="head">
-    <div class="logo fl">
-      <a>导航页</a>
-    </div>
+			        <div class="container">
 
-    <div class="title fl"></div>
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">browny</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
 
-  <div class="search fl">
-          <form class="form fl" action="http://www.sogou.com/sogou">
-              <input type="text" name="query" class="text fl" value="" placeholder="搜索一下" baiduSug="1">
-              <input type="submit" value="搜索" class="button fl">
-              <input type="hidden" name="pid" value="sogou-netb-51be2fed6c55f5aa-7224">
-          </form>
-        </div>
-</div>
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+			                    <li class=" smooth-menu"><a href="#education">education</a></li>
+			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
+			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
+			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
+			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
+			                    <li class="smooth-menu"><a href="#clients">clients</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+
+		    <div class="clearfix"></div>
+
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
+	
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2>hi <span>,</span> i am <br> browny <br> star <span>.</span>   </h2>
+							<p>ui/ux designer and web developer</p>
+							<a href="assets/download/browney.txt" download>download resume</a>
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--about start -->
+		<section id="about" class="about">
+			<div class="section-heading text-center">
+				<h2>about me</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="single-about-txt">
+								<h3>
+									I am a Professional UI/UX Designer and Web developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+								</h3>
+								<p>
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit,
+								</p>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>phone</h3>
+											<p>987-123-6547</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>email</h3>
+											<p>browny@info.com</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>website</h3>
+											<p>www.brownsine.com</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="single-about-img">
+								<img src="assets/images/about/profile_image.jpg" alt="profile_image">
+								<div class="about-list-icon">
+									<ul>
+										<li>
+											<a href="#">
+												<i  class="fa fa-facebook" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-dribbble" aria-hidden="true"></i>
+											</a>
+											
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+											
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-linkedin" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										<li>
+											<a href="#">
+												<i  class="fa fa-instagram" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										
+										
+									</ul><!-- / ul -->
+								</div><!-- /.about-list-icon -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+		
+		<!--education start -->
+		<section id="education" class="education">
+			<div class="section-heading text-center">
+				<h2>education</h2>
+			</div>
+			<div class="container">
+				<div class="education-horizontal-timeline">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2008 - 2010</h2>
+									<h3>master <span>of </span> computer science</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											university of north carolina
+										</h4>
+										<h5>north carolina, USA</h5>
+										<p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2004 - 2008</h2>
+									<h3>bachelor <span>of </span> computer science</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											university of north carolina
+										</h4>
+										<h5>north carolina, USA</h5>
+										<p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>2004 - 2008</h2>
+									<h3>bachelor <span>of </span> creative design</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal spacial-horizontal-line
+									"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											university of bolton
+										</h4>
+										<h5>bolton, united kingdome</h5>
+										<p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.education-->
+		<!--education end -->
+
+		<!--skills start -->
+		<section id="skills" class="skills">
+				<div class="skill-content">
+					<div class="section-heading text-center">
+						<h2>skills</h2>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">adobe photoshop</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													  
+												</div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">adobe illustrator</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>85%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">adobe after effects</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
+												   
+											   </div>
+											</div>
+											<h3>97%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">sketch</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">html 5</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													
+												</div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">css 3 animation</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>85%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">communication</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
+												   
+											   </div>
+											</div>
+											<h3>97%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText"> creativity</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+								</div>
+							</div>
+						</div><!-- /.row -->
+					</div>	<!-- /.container -->		
+				</div><!-- /.skill-content-->
+
+		</section><!--/.skills-->
+		<!--skills end -->
+
+		<!--experience start -->
+		<section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>experience</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+							<ul>
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2018 - Present</h2>
+													<h3>creative director</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2016 - 2018
+													</h2>
+													<h3>associate design director</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2016 - 2018
+													</h2>
+													<h3>associate design director</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2013 - 2016</h2>
+													<h3>senior UI/UX designer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2012 - 2013
+													</h2>
+													<h3>UI/UX designer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2012 - 2013
+													</h2>
+													<h3>UI/UX designer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2010 - 2012</h2>
+													<h3>frontend developer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+							</ul>
+						</div><!--.main-timeline-->
+					</div><!--.experience-content-->
+			</div>
+
+		</section><!--/.experience-->
+		<!--experience end -->
+
+		<!--profiles start -->
+		<section id="profiles" class="profiles">
+			<div class="profiles-details">
+				<div class="section-heading text-center">
+					<h2>profiles</h2>
+				</div>
+				<div class="container">
+					<div class="profiles-content">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-themeforest"></i></a>
+										<div class="profile-icon-name">themeforest</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-themeforest"></i></a>
+											<div class="profile-icon-name">themeforest</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">dribbble</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-dribbble"></i></a>
+											<div class="profile-icon-name">dribbble</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-behance-logo"></i></a>
+										<div class="profile-icon-name">behance</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-behance-logo"></i></a>
+											<div class="profile-icon-name">behance</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-github-logo"></i></a>
+										<div class="profile-icon-name">github</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-github-logo"></i></a>
+											<div class="profile-icon-name">github</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="profile-border"></div>
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+										<div class="profile-icon-name">flickR</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+											<div class="profile-icon-name">flickR</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-smug"></i></a>
+										<div class="profile-icon-name">smungMung</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-smug"></i></a>
+											<div class="profile-icon-name">smungMung</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-squarespace-logo"></i></a>
+										<div class="profile-icon-name">squareSpace</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-squarespace-logo"></i></a>
+											<div class="profile-icon-name">squareSpace</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+										<div class="profile-icon-name">bitBucket</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+											<div class="profile-icon-name">bitBucket</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.profiles-->
+		<!--profiles end -->
+
+		<!--portfolio start -->
+		<section id="portfolio" class="portfolio">
+			<div class="portfolio-details">
+				<div class="section-heading text-center">
+					<h2>portfolio</h2>
+				</div>
+				<div class="container">
+					<div class="portfolio-content">
+						<div class="isotope">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p1.jpg" alt="portfolio image">
+										<div class="isotope-overlay">
+											<a href="#">
+												ui/ux design
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/p2.jpg" alt="portfolio image">
+										<div class="isotope-overlay">
+											<a href="#">
+												ui/ux design
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p3.jpg" alt="portfolio image">
+										<div class="isotope-overlay">
+											<a href="#">
+												web design
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="assets/images/portfolio/p4.jpg" alt="portfolio image">
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="assets/images/portfolio/p5.jpg" alt="portfolio image">
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
+
+		</section><!--/.portfolio-->
+		<!--portfolio end -->
+
+		<!--clients start -->
+		<section id="clients" class="clients">
+			<div class="section-heading text-center">
+				<h2>clients</h2>
+			</div>
+			<div class="clients-area">
+				<div class="container">
+					<div class="owl-carousel owl-theme" id="client">
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/clients/c1.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/clients/c2.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/clients/c3.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/clients/c4.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/clients/c5.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/clients/c6.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/clients/c7.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+					</div><!--/.owl-carousel-->
+				</div><!--/.container-->
+			</div><!--/.clients-area-->
+
+		</section><!--/.clients-->
+
+		</section><!--/.clients-->
+		<!--clients end -->
+
+		<!--contact start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>contact me</h2>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-form">
+									<form>
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="single-contact-btn">
+													<a class="contact-btn" href="#" role="button">submit</a>
+												</div><!--/.single-single-contact-btn-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+									</form><!--/form-->
+								</div><!--/.contact-form-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>browny star</h3>
+										<p>uI/uX designer</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>phone</h3>
+											<p>987-123-6547</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p>browny@info.com</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>www.brownsine.com</p>
+										</div>
+									</div>
+								</div><!--/.contact-adress-->
+								<div class="hm-foot-icon">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+
+		</section><!--/.contact-->
+		<!--contact end -->
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://www.zzvips.com/yuanma/">婧愮爜涔嬪</a></p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="assets/js/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
 
 
-<div class="content">
-    <h2>1</h2>
-      <ul>
-        <li><a href="http://www.jd.com">京东商城</a></li>
-        <li><a href="http://click.union.vip.com">唯品会</a></li>
-        <li><a href="http://www.suning.com">苏宁易购</a></li>
-        <li><a href="http://www.gome.com.cn">国美在线</a></li>
-        <li><a href="http://www.yhd.com">1号店</a></li>
-        <li><a href="http://www.dangdang.com">当当网</a></li>
-        <li><a href="http://www.yixun.com">易迅网</a></li>
-        <li><a href="http://www.vjia.com">凡客V+</a></li>
-        <li><a href="http://ai.taobao.com/?pid=mm_16596268_4688103_15820839">淘宝特卖</a></li>
-        <li><a href="http://www.tmall.com/">天猫</a></li>
-        <li><a href="http://www.newegg.cn">新蛋网</a></li>
-        <li><a href="http://www.yintai.com">银泰网</a></li>
-        <li><a href="http://www.ocj.com.cn">东方CJ</a></li>
-        <li><a href="http://www.sfbest.com">顺丰优选</a></li>
-        <li><a href="h/index.html">三合一收款码合成</a></li>
-      </ul>
-
-    <h2>2</h2>
-      <ul>
-        <li><a href="http://www.meilishuo.com/welcome?nmref=NM_s10094_0_jian&channel=40106">美丽说</a></li>
-        <li><a href="http://www.mogujie.com&feedback=jian">蘑菇街</a></li>
-        <li><a href="http://www.m18.com">麦考林</a></li>
-        <li><a href="http://www.vancl.com">凡客诚品</a></li>
-        <li><a href="http://www.moonbasa.com">梦芭莎</a></li>
-        <li><a href="http://www.handu.com">韩都衣舍</a></li>
-        <li><a href="http://www.inman.com.cn">茵曼</a></li>
-        <li><a href="http://www.liebo.com">裂帛</a></li>
-        <li><a href="http://www.xiu.com">走秀网</a></li>
-        <li><a href="http://www.pb89.com">太平鸟</a></li>
-        <li><a href="http://www.gap.cn">GAP中国</a></li>
-        <li><a href="http://www.masamaso.com">玛萨玛索</a></li>
-        <li><a href="http://www.banggo.com">邦购</a></li>
-        <li><a href="http://www.esprit.cn">ESPRIT</a></li>
-        <li><a href="http://www.mf910.com">马克华菲</a></li>
-      </ul>
-
-    <h2>3</h2>
-      <ul>
-        <li><a href="http://www.letao.com">乐淘网</a></li>
-        <li><a href="http://www.camel.com.cn">骆驼</a></li>
-        <li><a href="http://www.s.cn">名鞋库</a></li>
-        <li><a href="http://www.yougou.com">优购网</a></li>
-        <li><a href="http://www.mbaobao.com">麦包包</a></li>
-        <li><a href="http://www.uiyi.cn">佑一良品</a></li>
-        <li><a href="http://www.paixie.net">拍鞋网</a></li>
-        <li><a href="http://www.bagtree.com">包包树</a></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-    <h2>4</h2>
-      <ul>
-        <li><a href="http://www.lefeng.com">乐蜂网</a></li>
-        <li><a href="http://www.tiantian.com">天天网</a></li>
-        <li><a href="http://c.duomai.com">DHC化妆品</a></li>
-        <li><a href="http://www.no5.com.cn">NO5时尚广场</a></li>
-        <li><a href="http://www.lizi.com">丽子</a></li>
-        <li><a href="http://www.hitao.com">嗨淘</a></li>
-        <li><a href="http://www.zhiwo.com">知我药妆</a></li>
-        <li><a href="http://www.xifuquan.com">皙肤泉</a></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-    <h2>5</h2>
-      <ul>
-        <li><a href="http://redbaby.suning.com">红孩子</a></li>
-        <li><a href="http://www.muyingzhijia.com%2Findex.aspx">母婴之家</a></li>
-        <li><a href="http://www.leyou.com.cn">乐友网</a></li>
-        <li><a href="http://www.baobeigou.com">宝贝购</a></li>
-        <li><a href="http://www.haohaizi.com">好孩子</a></li>
-        <li><a href="http://www.bbready.com">贝备</a></li>
-        <li><a href="http://www.qinqinbaby.com">亲亲宝贝</a></li>
-        <li><a href="http://www.supuy.com">速普母婴商城</a></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-    <h2>6</h2>
-      <ul>
-        <li><a href="http://www.yhd.com">1号店超市</a></li>
-        <li><a href="http://www.sfbest.com">顺丰优选</a></li>
-        <li><a href="http://www.womai.com">中粮我买网</a></li>
-        <li><a href="http://www.feiniu.com">飞牛网(大润发)</a></li>
-        <li><a href="http://www.yunhou.com">云猴网</a></li>
-        <li><a href="http://www.feifei.com">飞飞商城</a></li>
-        <li><a href="http://www.dapu.com">大朴</a></li>
-        <li><a href="http://www.mmall.com">红星美凯龙</a></li>
-        <li><a href="http://www.rrs.com">海尔日日顺</a></li>
-        <li><a href="http://www.winenice.com">酒美网</a></li>
-        <li><a href="http://www.jiuxian.com">酒仙网</a></li>
-        <li><a href="http://www.zhongjiu.cn">中酒网</a></li>
-        <li><a href="http://www.wangjiu.com">网酒网</a></li>
-        <li><a href="http://www.yesmywine.com">也买酒</a></li>
-        <li></li>
-      </ul>
-
-    <h2>7</h2>
-      <ul>
-        <li><a href="http://www.aizhigu.com.cn">爱之谷</a></li>
-        <li><a href="http://www.x.com.cn">桔色情趣用品</a></li>
-        <li><a href="http://www.jxdyf.com">金象大药房</a></li>
-        <li><a href="http://www.818.com">818医药网</a></li>
-        <li><a href="http://www.111.com.cn">壹药网</a></li>
-        <li><a href="http://www.ehaoyao.com">好药师</a></li>
-        <li><a href="http://www.keede.com">可得眼镜</a></li>
-        <li><a href="http://www.aidai.com">爱戴眼镜网</a></li>
-        <li><a href="http://www.vsigo.cn">视客眼镜</a></li>
-        <li></li>
-      </ul>
-
-    <h2>8</h2>
-      <ul>
-        <li><a href="http://bj.meituan.com/">美团网</a></li>
-        <li><a href="http://www.nuomi.com">百度糯米</a></li>
-        <li><a href="http://www.lashou.com">拉手网</a></li>
-        <li><a href="http://shanghai">大众点评团</a></li>
-        <li><a href="http://www.55tuan.com">窝窝团</a></li>
-        <li><a href="http://www.jumei.com">聚美优品</a></li>
-        <li><a href="http://www.pztuan.com">品质团</a></li>
-        <li><a href="http://ww.glituan.com">给力团</a></li>
-        <li><a href="http://www.manzuo.com">满座团</a></li>
-        <li><a href="http://www.daoxila.com">到喜啦</a></li>
-        <li><a href="http://www.d8wed.com">D8婚团</a></li>
-        <li><a href="http://www.xituan.com">喜团网</a></li>
-        <li><a href="http://www.aituan.com">爱团网</a></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-</div>
-
-
-<div class="footer">
-    <div class="fleft fl">
-		<p class="p2">Copyright &copy; tyu.cab &nbsp; &nbsp;</p>
-    </div>
-
-    <div class="fright fr">
-        <p>导航页</p>
-    </div>
-</div>
-
-
-</body>
+		<script src="assets/js/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
 </html>
