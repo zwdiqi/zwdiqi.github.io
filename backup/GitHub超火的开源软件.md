@@ -7,4 +7,4 @@ https://github.com/xiaoyaocz/dart_simple_live  4个平台聚合直播
 
 https://github.com/d4rken-org/sdmaid-se   手机空间清理软件
 
-<!-- Failed to upload "plugins.json" -->
+[plugins.json](https://github.com/user-attachments/files/19670527/plugins.json)
